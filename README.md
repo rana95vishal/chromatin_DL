@@ -1,7 +1,9 @@
 # chromatin_DL
-Dictionary learning for ChIA-Drop experiments with online convex matrix factorization
+This is a repository for the paper "Online Convex Network Dictionary Learning for Inferring Chromatin Interactions." Online cvxNDL can learn dictionary elements (i.e. cluster representatives) from extensive datasets due to its online nature. The dictionary elements are represented as convex combinations of observed data points, thus making the results interpretable and highly useful for biological applications. The dictionaries learned by our method are organized as shown next.
 
-This is a repository for the paper "Online Convex Network Dictionary Learning for Inferring Chromatin Interactions."
+<p align="center">
+<img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/dict_org.png" width="600">
+</p>
 
 The algorithm has two major components: an MCMC-based network subsampling and an iterative optimization to learn the dictionary. 
 
