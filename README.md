@@ -13,9 +13,12 @@ source run_example.sh
 ```
 ### Details of the pipeline
 
-1. Raw data in the form of lists of edges for various SBM networks can be found in the sub-folder 'sampling\Data\synthetic\'.
+1. Raw data in the form of lists of edges for various SBM networks can be found in the sub-folder 'sampling\Data\synthetic\'. The sbm2 network file is plotted below
+   <p align="center">
+   <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/sbm_show.png" width="600">
+   </p>
 2. To run the MCMC sampling procedure, use the script 'sampling\generate_synthetic_samples.py'. The sampled data is stored in the folder 'processed_data\synthetic'.
-3. The results
+4. The results
 ## Packages
 The following packages are needed to run the code
 ```
