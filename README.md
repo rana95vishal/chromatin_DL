@@ -20,16 +20,22 @@ source run_example.sh
    <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/sbm_show.png" width="600">
    </p>
 2. To run the MCMC sampling procedure, use the script 'sampling\generate_synthetic_samples.py'. The sampled data is stored in the folder 'processed_data\synthetic'.
-3. To run the optimization procedure to learn the dictionary, use the 'run_sample.sh' script. The results will be stored in the folder 'results\synthetic'. We show one of the representative elements of the dictionary learned by our method.
+3. To run the optimization procedure to learn the dictionary, use the 'synthetic_example.sh' script. The results will be stored in the folder 'results\synthetic'. We show one of the representative elements of the dictionary learned by our method.
    <p align="center">
    <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/sbm_show_reps.png" width="600">
    </p>
 
 ## ChIA-Drop Data
-To download the full ChIA-Drop dataset, please refer to this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109355). We used the data from RNAPII-enriched ChIA-Drop experiment (GSM3347525). 
+To download the full ChIA-Drop dataset, please refer to this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109355). We used the data from the RNAPII-enriched ChIA-Drop experiment (GSM3347525). 
 
 ### Pre-processing 
-1. Run MIA-Sig enrichment 
+1. Run [MIA-Sig](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1868-z) enrichment with FDR 0.1. The required software repository can be found [here](https://github.com/TheJacksonLaboratory/mia-sig).
+2. Perform clique expansion on the filtered hyperedges to obtain a regular network. After clique expansion, we have a list of edges for each chromosome and we can follow the steps in the previous example.
+
+### Details of the pipeline
+3. We provide an example with a small subset of processed data from chr3R. The list of edges is provided in the sub-folder 'sampling\Data\DNA\'.
+4. Run the MCMC sampling procedure, using the script 'sampling\generate_iid_samples.py'. The sampled data is stored in the folder 'processed_data\DNA'.
+5. Run the optimization procedure to learn the dictionary, using the 'chromatin_example.sh' script. The results will be stored in the folder 'results\DNA'. 
 
 ## Packages
 The following packages are needed to run the code
