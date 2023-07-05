@@ -18,7 +18,8 @@ source run_example.sh
    <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/sbm_show.png" width="600">
    </p>
 2. To run the MCMC sampling procedure, use the script 'sampling\generate_synthetic_samples.py'. The sampled data is stored in the folder 'processed_data\synthetic'.
-4. The results
+3. To run the optimization procedure to learn the dictionary, run 'run_sample.sh'. The results will be stored in the folder 'results\synthetic'.
+   
 ## Packages
 The following packages are needed to run the code
 ```
