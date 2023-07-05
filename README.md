@@ -5,7 +5,7 @@ This is a repository for the paper "Online Convex Network Dictionary Learning fo
 <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/dict_org.png" width="600">
 </p>
 
-The algorithm has two major components: an MCMC-based network subsampling and an iterative optimization to learn the dictionary.
+The algorithm has two major components: an MCMC-based network subsampling and an iterative optimization to learn the dictionary. We separated the MCMC sampling procedure for generating online samples from the iterative optimization procedure to improve the overall efficiency. The MCMC sampling procedure can be found in the folder `sampling`. 
 
 ## Example with Synthetic Data
 
@@ -24,7 +24,10 @@ source run_example.sh
    <p align="center">
    <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/sbm_show_reps.png" width="600">
    </p>
-   
+
+## ChIA-Drop Data
+To download the full ChIA-Drop dataset, please refer to this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109355).
+
 ## Packages
 The following packages are needed to run the code
 ```
