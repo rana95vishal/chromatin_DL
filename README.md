@@ -26,7 +26,10 @@ source run_example.sh
    </p>
 
 ## ChIA-Drop Data
-To download the full ChIA-Drop dataset, please refer to this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109355).
+To download the full ChIA-Drop dataset, please refer to this [link](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109355). We used the data from RNAPII-enriched ChIA-Drop experiment (GSM3347525). 
+
+### Pre-processing 
+1. Run MIA-Sig enrichment 
 
 ## Packages
 The following packages are needed to run the code
