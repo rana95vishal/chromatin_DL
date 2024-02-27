@@ -5,7 +5,13 @@ This is a repository for the paper "Online Convex Network Dictionary Learning fo
 <img src="https://github.com/rana95vishal/chromatin_DL/blob/main/figures/dict_org_alt.png" width="600">
 </p>
 
-The algorithm has two major components: an MCMC-based network subsampling and an iterative optimization to learn the dictionary. We separated the MCMC sampling procedure for generating online samples from the iterative optimization procedure to improve the overall efficiency. The MCMC sampling procedure can be found in the folder `sampling`. 
+The algorithm has two major components: an MCMC-based network subsampling and an iterative optimization to learn the dictionary. We separated the MCMC sampling procedure for generating online samples from the iterative optimization procedure to improve the overall efficiency. The MCMC sampling procedure can be found in the folder `sampling`.
+
+## Scripts to replicate individual steps of the pipeline
+
+1. Clique expansion
+2. MCMC sampling of subnetworks
+3. Online cvxNDL algorithm 
 
 ## Example with Synthetic Data
 
@@ -35,7 +41,7 @@ To download the full ChIA-Drop dataset, please refer to this [link](https://www.
 ### Details of the pipeline
 3. We provide an example with a small subset of processed data from chr3R. The list of edges is provided in the sub-folder 'sampling\Data\DNA\'.
 4. Run the MCMC sampling procedure, using the script 'sampling\generate_iid_samples.py'. The sampled data is stored in the folder 'processed_data\DNA'.
-5. Run the optimization procedure to learn the dictionary, using the 'chromatin_example.sh' script. The results will be stored in the folder 'results\DNA'. 
+5. Run the optimization procedure to learn the dictionary, using the 'chromatin_example.sh' script. The results will be stored in the folder 'results\DNA'.
 
 ## Packages
 The following packages are needed to run the code
