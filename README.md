@@ -9,9 +9,9 @@ The algorithm has two major components: an MCMC-based network subsampling and an
 
 ## Scripts to replicate individual steps of the pipeline
 
-1. Clique expansion
-2. MCMC sampling of subnetworks
-3. Online cvxNDL algorithm 
+1. Clique expansion - 'code\clique_expansion.py' - If your input network is a hypergraph, convert all hyperedges to cliques. This step is necessary for data generated using ChIA-Drop where multiway chromatin interactions are captured. Pairwise contact capture protocols like Hi-C and ChIA-PET do not need a clique expansion.
+3. MCMC sampling of subnetworks
+4. Online cvxNDL algorithm 
 
 ## Example with Synthetic Data
 
